@@ -14,6 +14,7 @@ public class PrimeFinder {
         this.numericValue = numericValue;
     }
 
+    // method to find all primes in given set
     public TreeSet<Integer> findPrimes() {
 
         for (int i = 0; i < numericValue.length(); i++) {
@@ -28,6 +29,7 @@ public class PrimeFinder {
         return this.primesList;
     }
 
+    // method to test whether a number is prime
     private boolean isPrime (int number) {
 
         if (number <= 1) {

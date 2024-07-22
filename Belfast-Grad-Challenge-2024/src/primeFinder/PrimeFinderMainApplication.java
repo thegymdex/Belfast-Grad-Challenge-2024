@@ -1,5 +1,10 @@
 package primeFinder;
 
+// TODO - Add error log files
+// TODO - Add unit tests
+// TODO - Add file IO
+// TODO - Add README documentation
+
 import utils.FileCacheUtils;
 import utils.InputValidator;
 

@@ -2,9 +2,8 @@ package utils;
 
 public class InputValidator {
 
-    // using regex to allow for future validations to take place
+    // method to validate a given input against a regex - future proof
     public static boolean validateInput(String input, String validationPattern) {
-
         return input.matches(validationPattern);
     }
 }
