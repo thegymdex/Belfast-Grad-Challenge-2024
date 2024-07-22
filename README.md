@@ -8,11 +8,7 @@ Thank you for taking the time to review my submission for the Belfast Graduate P
 
 Detailed below is the project structure:
 
-Belfast-Grad-Challenge-2024
-          |
-          |
-          |
-data  src  assumptions.txt
+Belfast-Grad-Challenge-2024 -----> data  src  assumptions.txt
 
 data - contains the file containing all prime numbers found. Can be deleted to test functionality.
 
