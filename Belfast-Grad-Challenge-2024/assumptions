@@ -1,3 +1,5 @@
 List of assumptions made in the development of the program:
 
+For input, the values are hardcoded rather than being taken in through the command line via Scanner.
+
 For validation, only the numeric value should be validated.

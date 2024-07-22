@@ -2,11 +2,12 @@ package primeFinder;
 
 public class User {
     private String username;
-    private int numericValue;
+    private String numericValue;
 
     public User(String username, String numericValue) {
+
         this.username = username;
-        this.numericValue = Integer.parseInt(numericValue);
+        this.numericValue = numericValue;
     }
 
     public String getUsername() {
@@ -17,11 +18,11 @@ public class User {
         this.username = username;
     }
 
-    public int getNumericValue() {
+    public String getNumericValue() {
         return numericValue;
     }
 
-    public void setNumericValue(int numericValue) {
+    public void setNumericValue(String numericValue) {
         this.numericValue = numericValue;
     }
 }
