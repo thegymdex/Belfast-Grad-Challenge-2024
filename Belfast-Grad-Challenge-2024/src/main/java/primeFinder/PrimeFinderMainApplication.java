@@ -1,12 +1,9 @@
-package primeFinder;
+package main.java.primeFinder;
 
-// TODO - Add error log files
 // TODO - Add unit tests
-// TODO - Add file IO
-// TODO - Add README documentation
 
-import utils.FileCacheUtils;
-import utils.InputValidator;
+import main.java.utils.FileCacheUtils;
+import main.java.utils.InputValidator;
 
 import java.util.TreeSet;
 
@@ -18,8 +15,10 @@ public class PrimeFinderMainApplication {
 
         // load previous file data in
         if (!FileCacheUtils.loadFileData(primesList)) {
-            System.out.println("ERROR - Unable to load file data into cache! \nMore details can be found in logs.");
-            return;
+            System.out.println("ERROR - Unable to load file data into cache!");
+        }
+        else {
+            System.out.println("INFO - Data from File loaded into Cache!");
         }
 
         // define username and numeric value
@@ -31,15 +30,19 @@ public class PrimeFinderMainApplication {
 
         // validate numeric value
         if (!InputValidator.validateInput(numericValue, validationPattern)) {
-            System.out.println("ERROR - Validation Failed! Numeric Value did not meet requirements! \nMore details can be found in logs.");
+            System.out.println("ERROR - Validation Failed! Numeric Value did not meet requirements!");
             return;
         }
+
+        System.out.println("INFO - Numeric Value Validation Passed!");
 
         // create user object
         User user = new User(username, numericValue);
 
-        // create primeFinder object
+        // create main.java.primeFinder object
         PrimeFinder primeFinder = new PrimeFinder(primesList, user.getNumericValue());
+
+        System.out.println("INFO - Finding Prime Numbers!");
 
         // call prime finder method
         primeFinder.findPrimes();
@@ -49,7 +52,11 @@ public class PrimeFinderMainApplication {
 
         // write cache to file
         if (!FileCacheUtils.writeFileData(primesList)) {
-            System.out.println("ERROR - Unable to write file data into cache! \nMore details can be found in logs.");
+            System.out.println("ERROR - Unable to write file data into cache!");
+            return;
         }
+
+        System.out.println("INFO - Cache Data written to File!");
+
     }
 }

@@ -1,4 +1,4 @@
-package primeFinder;
+package main.java.primeFinder;
 
 import java.util.TreeSet;
 
@@ -6,7 +6,6 @@ public class PrimeFinder {
 
     private TreeSet<Integer> primesList;
     private String numericValue;
-
 
     public PrimeFinder(TreeSet<Integer> primesList, String numericValue) {
 
@@ -36,7 +35,7 @@ public class PrimeFinder {
             return false;
         }
 
-        for (int i = 2; i < number; i++) {
+        for (int i = 2; i <= number / 2; i++) {
             if (number % i == 0) {
                 return false;
             }

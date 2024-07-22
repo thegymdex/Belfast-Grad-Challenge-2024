@@ -1,4 +1,4 @@
-package primeFinder;
+package main.java.primeFinder;
 
 public class User {
     private String username;
