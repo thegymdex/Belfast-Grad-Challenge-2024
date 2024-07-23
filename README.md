@@ -8,11 +8,15 @@ Thank you for taking the time to review my submission for the Belfast Graduate P
 
 Detailed below is the project structure:
 
-`Belfast-Grad-Challenge-2024` -----> `data`    `src`    `assumptions.txt`
+`Belfast-Grad-Challenge-2024` -----> `data`    `src`  `libs` `test-data`  `assumptions.txt` 
 
 data - contains the file containing all prime numbers found. Can be deleted to test functionality.
 
 src - contains all java files.
+
+libs - contains the jar files for JUnit
+
+test-data - contains test files used in the tests
 
 assumptions.txt - contains all assumptions made about the task.
 
