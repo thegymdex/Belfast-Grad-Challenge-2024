@@ -6,7 +6,8 @@ import java.util.stream.Collectors;
 
 public class FileCacheUtils {
 
-    private static final String filePath = "./data/primes.txt";
+    // would like to make private and final, however to make tests work under time constraints had to make public
+    public static String filePath = "./data/primes.txt";
 
     // method to load file data into cache
     public static boolean loadFileData(TreeSet<Integer> primeList) {
